@@ -42,9 +42,18 @@ const Board = () =>
         setState (Array(9).fill(null));
     }
     return (
-        <div className='board-container'>
+        <div style ={{color:"#483D8B"}} className='board-container'>
             {iswinner ? (<>{iswinner} won the game.
-        <button onClick={handleReset}>play again</button> </>
+        <button  style={{backgroundColor:"#8A2BE2",
+                         color:"white", 
+                        padding:"7px 6px",
+                        marginLeft:"10px", 
+                        fontSize:"16px", 
+                        animation:"button 0.3s",
+                        borderRadius:"10px", 
+                        hover:"background-color:#BA55D3",
+                        cursor:"pointer",
+                        borderStyle:"none" }} onClick={handleReset}>play again</button> </>
         ) : 
         (<>
             <h4>please {isxTurn? "X" : "O"} move</h4>
