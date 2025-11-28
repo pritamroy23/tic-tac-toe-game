@@ -1,0 +1,12 @@
+.board-row {
+  display: flex;
+  align-items: center;
+  
+}
+.board-container {
+  margin:auto;
+  width:300px;
+  padding-top:50px;
+
+  
+}
